@@ -48,7 +48,7 @@ public class GdprDialogPlugin implements MethodCallHandler {
             returnResult(false);
             break;
           case UNKNOWN:
-            if (ConsentInformation.getInstance(activity.getBaseContext()).isRequestLocationInEeaOrUnknown())
+            //if (ConsentInformation.getInstance(activity.getBaseContext()).isRequestLocationInEeaOrUnknown())
               requestConsent(privacyUrl);
             else
               returnResult(true);
